@@ -1,0 +1,278 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{titlesec}
+\usepackage[official]{eurosym}
+\usepackage{siunitx} \sisetup{ output-decimal-marker={,}, quotient-mode=fraction}   % Sistema internacional para unidades con separador decimal
+\usepackage[hidelinks]{hyperref}                    % Enlaces sin apariencia fea
+\usepackage{enumitem}
+
+\title{Recopilatorio de problemas de matemáticas}
+\author{Samuel Gómez}
+\date{\today}
+
+
+% Entorno problema ========================================
+\newcounter{problema}[section]
+\newenvironment{problema}[3]
+{\refstepcounter{problema} \noindent\textbf{Problema \theproblema} \hspace{0.5cm} \textbf{#1}
+	\paragraph{} #2
+
+	\ifdefined\soluciones {
+		\paragraph{Solución} #3 ..
+	} \else {} \fi
+}
+{\vspace{1cm}}
+
+% Cambio sección ==========================================
+\titleformat{\section}
+  {\normalfont\Large\bfseries}   % The style of the section title
+  {}                             % a prefix
+  {0pt}                          % How much space exists between the prefix and the title
+  {}    						 % How the section is represented
+
+
+% = BEGIN DOCUMENT ======================================================
+\begin{document}
+% soluciones.cfg puede contener: \def\soluciones{true}
+% en ese caso se muestran las soluciones de los problemas
+% en caso de que el fichero esté vacío -> no se define la macro y no se imprimen las soluciones
+%\input{soluciones.cfg}
+
+\maketitle
+\vspace{2cm}
+\tableofcontents
+\newpage
+
+
+
+
+
+% == NIVEL ============================================
+\section{Nivel I}
+\begin{problema}
+{El despistado}
+{Marcos ha perdido el 35\% del dinero que llevaba. Si ahora tiene 240\euro{}, ¿cuánto dinero
+llevaba la principio y cuanto ha perdido?}
+{}
+\end{problema}
+
+\begin{problema}
+{Ruta en ascenso}
+{En una ruta ascendemos \SI{100}{\meter} por cada $\SI{3}{\kilo\meter}$ recorridos.
+	\begin{enumerate}[label=\alph*)]
+	\item ¿Cuál es la razón entre los metros ascendidos y los recorridos?
+	\item Si hemos recorrido $\SI{12}{\kilo\meter}$, ¿cuántos metros hemos ascendido?
+	\end{enumerate}
+}
+{}
+\end{problema}
+
+\begin{problema}
+	{El lado del cuadrado}
+	{Si el lado de una cuadrado es el doble que el de otro, ¿es también el área del primer cuadrado
+	doble que el segundo? Pon un ejemplo y razona tu respuesta.}
+{}
+\end{problema}
+
+\begin{problema}
+	{El vendedor de coches}
+	{Pedro cobra mensualmente 1200 \euro{} de sueldo fijo más 300 \euro{} por cada coche que vende.
+	
+	\begin{enumerate}[label=\alph*)]
+		\item Escribe la fórmula de la función que representa el sueldo mensual en función del
+			número de coches que vende. ¿De qué tipo es?
+		\item Representa gráficamente la función
+		\item Si un mes vende 3 coches, ¿cuál será su sueldo?
+		\item Si ha cobrado 3000 \euro{} este mes, ¿cuántos coches ha vendido?
+		\item Indica si esta función es creciente o decreciente y si tiene algún máximo o mínimo
+			relativo
+	\end{enumerate}
+	}
+	{}
+\end{problema}
+
+\begin{problema}
+	{Las hermanas}
+	{Patricia dice: "Mi hermana tenía 4 años cuando yo nací."
+	\begin{enumerate}[label=\alph*)]
+		\item Expresa con una función como varía la edad de Patricia al variar la de su hermana. Haz
+			una tabla de valores de la función obtenida y represéntala gráficamente.
+		\item ¿Cuántos años tendrá Patricia cuando su hermana le doble la edad?
+	\end{enumerate}
+	}
+	{}
+\end{problema}
+
+
+\begin{problema}
+	{La ahorradora}
+	{Tania decide ahorrar 3 \euro{} semanales. Encuentra la fórmula que relaciona el dinero ahorrado
+	con el número de semanas.
+	\begin{enumerate}[label=\alph*)]
+		\item ¿Cuánto habrá ahorrado en 11 semanas?
+		\item Calcula el número de semanas que tienen que transcurrir para que tenga ahorrados
+			78\euro{}
+	\end{enumerate}
+	}
+	{}
+\end{problema}
+
+
+% == NIVEL ============================================
+\newpage
+\section{Nivel II}
+\begin{problema}
+{Ramo de flores}
+{Un ramo de 9 flores iguales cuesta 13,5\euro{}. Halla el precio de un ramo de las mismas flores
+que tenga 4 más que el anterior.}
+{}
+\end{problema}
+
+
+\begin{problema}
+{Coser pantalones}
+{Tres personas cosen 12 pantalones en 10 minutos. Halla cuántos pantalones coserán 4 personas en 15
+	minutos.}
+{}
+\end{problema}
+
+\begin{problema}
+{Nacimientos}
+{En un titular de un periódico se afirmaba: "los nacimientos caen casi un 30\% en España en la
+	última década". En 2008, el número de nacimientos en España fue de 519.799 y en 2018, de
+	369.302. Comprueba si es cierta la afirmación del titular, calculando el porcentaje exacto.
+}
+{}
+\end{problema}
+
+% == NIVEL ============================================
+\newpage
+\section{Nivel III}
+
+\begin{problema}
+{Miguel y su primo}
+{Miguel tiene ahora cuatro años más que su primo Ignacio y, dentro de tres años, entre
+los dos sumarán 20 años. ¿Cuántos años tiene cada uno?}
+{}
+\end{problema}
+
+\begin{problema}
+{Un problema capital}
+{un padre cede a un hijo un quinto de su capital, a otro un cuarto y a un tercer hijo le da
+el resto, que son 19.800 \euro{} ¿cuál era su capital?.}
+{}
+\end{problema}
+
+
+\begin{problema}
+{Dos números consecutivos}
+{Halla dos números consecutivos, tales que añadiendo al cuadrado del mayor la mitad del menor resulta
+27.}
+{}
+\end{problema}
+
+
+
+
+
+% == NIVEL ============================================
+\newpage
+\section{Nivel IV}
+\begin{problema}{Juguetes}
+{En una tienda hay dos tipos de juguetes, los de tipo A que utilizan 2 pilas y los de tipo B que utilizan 5 pilas. Si en total en
+la tienda hay 30 juguetes y 120 pilas, ¿cuántos juguetes hay de cada tipo?}
+{}
+\end{problema}
+
+
+\begin{problema}{Las notas}
+{Nieves le pregunta a Miriam por sus calificaciones en Matemáticas y en Lengua. Miriam le dice "La suma de mis
+calificaciones es 19 y el producto 90". Nieves le da la enhorabuena. ¿Qué calificaciones obtuvo?}
+{}
+\end{problema}
+
+
+\begin{problema}{Master chef}
+{Se desea mezclar harina de 2 \euro{}/kg con harina de 1 \euro{}/kg para obtener una mezcla de 1.2
+\euro{}/kg. ¿Cuántos kg deberemos
+poner de cada precio para obtener 300 kg de mezcla?}
+{}
+\end{problema}
+
+
+\begin{problema}
+{Virus y ballenas}
+	{El ser vivo más pequeño es un virus que pesa del orden de $\SI{10d-10}{\gram}$ y el más grande es la ballena azul, que pesa,
+	aproximadamente, 138 toneladas. ¿Cuántos virus serían necesarios para conseguir el peso de la ballena?.}
+{}
+\end{problema}
+
+% == NIVEL ============================================
+\newpage
+\section{Nivel V}
+\begin{problema}
+{Mitades y caudrados}
+{La mitad de un número entero sumado con su cuadrado es igual a ocho veces dicho número menos 9.
+	Calcula dicho número.}
+{}
+\end{problema}
+
+\begin{problema}
+{Excesos de catetos}
+{En un triángulo rectángulo, un cateto excede en 7 unidades al otro. Si sabemos que su hipotenusa es
+	85, ¿cuánto mide cada cateto?}
+{}
+\end{problema}
+
+\begin{problema}
+{La raíz cuadrada que se creía inferior}
+{Calcula un número sabiendo que la suma de dicho número con el doble de su raíz cuadrada es inferior
+	en 3 unidades al doble de dicho número.}
+{}
+\end{problema}
+
+\begin{problema}
+{Superar el examen de matemáticas}
+{Para superar la asignatura de matemáticas hay tres pruebas distintas: un examen teórico, uno de
+	problemas y una exposición de un trabajo. Pedro, Juana y Pablo se han examinado y han obtenido
+	las notas siguientes:
+	\begin{center}
+	\begin{tabular}{ | l | c  c  c | c |} 
+	 \hline
+		& \textbf{Teoría} & \textbf{Problemas} & \textbf{Exposición} & \textbf{Nota final} \\
+	 \hline
+		\textbf{Pedro} & 8 & 6 & 4 & 6,2 \\
+		\textbf{Juana} & 7 & 5 & 8 & 5,95 \\
+		\textbf{Pablo} & 3 & 9 & 7 & 7,2 \\
+	 \hline
+	\end{tabular}
+	\end{center}
+	¿Qué porcentaje de la nota final corresponde a cada una de las pruebas?
+}
+{}
+\end{problema}
+
+\newpage
+\begin{problema}
+{Padre e hijo}
+{La edad de un padre excede en 3 unidades el doble de la edad de su hijo.
+Calcula la edad del padre y del hijo sabiendo que dentro de tres años el doble de la edad
+	del padre superará en 24 años al triple de la edad del hijo.}
+{}
+\end{problema}
+
+
+\begin{problema}
+{Rectángulo y cuadrado}
+{El área de un cuadrado es la sexta parte del área de un rectángulo.
+Además, el lado del cuadrado es la mitad de uno de los lados del rectángulo y el perímetro
+del rectángulo es de $\SI{30}{\centi\meter}$. Calcula las dimensiones del cuadrado y del
+	rectángulo.}
+{}
+\end{problema}
+%\begin{problema}{Título}{Cuerpo}\end{problema}
+
+
+
+\end{document}

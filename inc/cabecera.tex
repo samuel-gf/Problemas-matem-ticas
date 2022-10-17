@@ -1,0 +1,49 @@
+\documentclass[12pt,A5]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{titlesec}
+\usepackage[official]{eurosym}
+\usepackage{siunitx} \sisetup{ output-decimal-marker={,}, quotient-mode=fraction}   % Sistema internacional para unidades con separador decimal
+\usepackage[hidelinks]{hyperref}                    % Enlaces sin apariencia fea
+\usepackage{enumitem}
+
+\title{Recopilatorio de problemas de matemáticas}
+\author{Samuel Gómez}
+\date{\today}
+
+
+% Entorno problema ========================================
+%\begin{problema}{Enunciado}\end{problema}
+\newcounter{problema}[section]
+\newenvironment{problema}[2]
+{\refstepcounter{problema} \noindent\textbf{Problema \thesection.\theproblema} \hspace{0.5cm} #1
+	\ifdefined\soluciones {
+		\paragraph{Solución} #2 ..
+	} \else {} \fi
+}
+{\vspace{1cm}}
+
+% Cambio sección ==========================================
+\titleformat{\section}
+  {\normalfont\Large\bfseries}   % The style of the section title
+  {\thesection.- }                             % a prefix
+  {0pt}                          % How much space exists between the prefix and the title
+  {}    						 % How the section is represented
+
+
+% = BEGIN DOCUMENT ======================================================
+\begin{document}
+% soluciones.cfg puede contener: \def\soluciones{true}
+% en ese caso se muestran las soluciones de los problemas
+% en caso de que el fichero esté vacío -> no se define la macro y no se imprimen las soluciones
+%\input{soluciones.cfg}
+
+
+
+\pagenumbering{gobble}
+\maketitle
+
+\pagenumbering{Roman}
+\tableofcontents
+
+\pagenumbering{arabic}
