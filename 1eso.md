@@ -1,4 +1,4 @@
-# Álgebra
+# Aritmética
 
 Marcos ha perdido el 35% del dinero que llevaba. Si ahora tiene 240 €, ¿cuánto dinero
 llevaba la principio y cuanto ha perdido?

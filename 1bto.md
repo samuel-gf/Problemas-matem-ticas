@@ -4,7 +4,7 @@ Se quiere vallar un campo rectangular. Se sabe que uno de sus lados mide tres qu
 medida del otro y la diagonal mide 30 metros. Si un metro de valla cuesta 25€ y se desperdicia
 un 10% del material empleado, calcula el precio que se deberá pagar.
 
-Tres números reales posirivos $a$, $b$ y $c$ pueden representar las medidas de los tres lados de un
+Tres números reales positivos $a$, $b$ y $c$ pueden representar las medidas de los tres lados de un
 triángulo si y solo so verifican que la suma de los dos menores es mayor que el menor. Indica los
 valores que pueden tomar $a$ para que los números naturales $a$, $2a+1$ y 10 sean las medidas de un
 triángulo.
